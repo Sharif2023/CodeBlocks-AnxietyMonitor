@@ -1,10 +1,14 @@
 #ifndef ANXIETY_MONITOR_H
 #define ANXIETY_MONITOR_H
 
-// wxWidgets includes
+// wxWidgets includes (or stubs for standalone build)
+#ifdef STANDALONE_BUILD
+#include "wx_stubs.h"
+#else
 #include <wx/wx.h>
 #include <wx/timer.h>
 #include <wx/event.h>
+#endif
 
 // Standard includes
 #include <memory>

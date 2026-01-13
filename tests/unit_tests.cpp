@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <stdexcept>
 
 // Include the headers we want to test
 #include "../src/MetricsData.h"
@@ -31,7 +32,7 @@ int testsPassed = 0;
 
 #define ASSERT_EQ(expected, actual) do { \
     if ((expected) != (actual)) { \
-        throw std::runtime_error("Expected " + std::to_string(expected) + " but got " + std::to_string(actual)); \
+        throw std::runtime_error("Assertion failed: values not equal"); \
     } \
 } while(0)
 

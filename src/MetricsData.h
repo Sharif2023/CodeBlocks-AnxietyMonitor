@@ -5,6 +5,7 @@
 #include <vector>
 #include <chrono>
 #include <deque>
+#include <cmath>
 
 namespace AnxietyMonitor {
 

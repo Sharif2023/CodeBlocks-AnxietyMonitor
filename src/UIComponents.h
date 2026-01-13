@@ -1,6 +1,9 @@
 #ifndef UI_COMPONENTS_H
 #define UI_COMPONENTS_H
 
+#ifdef STANDALONE_BUILD
+#include "wx_stubs.h"
+#else
 #include <wx/wx.h>
 #include <wx/panel.h>
 #include <wx/sizer.h>
@@ -8,6 +11,8 @@
 #include <wx/listbox.h>
 #include <wx/gauge.h>
 #include <wx/timer.h>
+#endif
+
 #include <vector>
 #include <string>
 #include "MetricsData.h"
