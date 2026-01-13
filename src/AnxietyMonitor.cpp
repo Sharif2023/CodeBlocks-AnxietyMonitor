@@ -5,12 +5,14 @@
 #include "UIComponents.h"
 #include "EventHandlers.h"
 
+#ifndef STANDALONE_BUILD
 #include <wx/artprov.h>
 #include <wx/msgdlg.h>
 #include <wx/filedlg.h>
 #include <wx/filename.h>
 #include <wx/stdpaths.h>
 #include <wx/log.h>
+#endif
 
 #include <chrono>
 #include <iomanip>

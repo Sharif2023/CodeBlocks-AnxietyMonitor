@@ -1,8 +1,13 @@
 #ifndef DATA_COLLECTOR_H
 #define DATA_COLLECTOR_H
 
+#ifdef STANDALONE_BUILD
+#include "wx_stubs.h"
+#else
 #include <wx/timer.h>
 #include <wx/event.h>
+#endif
+
 #include <string>
 #include <chrono>
 #include <vector>

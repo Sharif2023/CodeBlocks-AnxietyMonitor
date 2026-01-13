@@ -23,9 +23,6 @@ AnxietyMonitor_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 AnxietyMonitor_SOURCE_DIR:STATIC=F:/CodeBlocks-AnxietyMonitor
 
-//Code::Blocks plugins directory
-CB_PLUGINS_DIR:PATH=C:/Program Files/CodeBlocks/share/codeblocks/plugins
-
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/lib.exe
 

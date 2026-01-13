@@ -39,6 +39,7 @@ class wxPanel;
 class wxColour;
 class wxString;
 class wxTimer;
+class wxSizer;
 
 // wxString stub
 class wxString : public std::string {
@@ -135,6 +136,7 @@ public:
     void Hide() {}
     void Refresh() {}
     void Layout() {}
+    void SetSizer(wxSizer*) {}
     
 protected:
     wxWindow* m_parent;
@@ -191,8 +193,9 @@ public:
     void Append(wxMenu*, const char*) {}
 };
 
-// wxMessageBox stub
-inline int wxMessageBox(const char*, const char*, long = 0, wxWindow* = nullptr) { return 0; }
+// wxMessageBox stub - use template to accept any string types
+template<typename T1, typename T2>
+inline int wxMessageBox(const T1&, const T2&, long = 0, wxWindow* = nullptr) { return 0; }
 
 // wxLogMessage/wxLogError stubs
 inline void wxLogMessage(const char*, ...) {}
@@ -253,6 +256,16 @@ public:
 #define wxTOP 0
 #define wxBOTTOM 0
 
+// Font - must be defined before wxStaticText
+class wxFont {
+public:
+    wxFont() {}
+    void SetPointSize(int) {}
+    void SetWeight(int) {}
+};
+
+#define wxFONTWEIGHT_BOLD 0
+
 // Static controls
 class wxStaticText : public wxWindow {
 public:
@@ -290,15 +303,6 @@ public:
 #define wxGA_SMOOTH 0
 #define wxLB_SINGLE 0
 #define wxBORDER_NONE 0
-
-// Font
-class wxFont {
-public:
-    void SetPointSize(int) {}
-    void SetWeight(int) {}
-};
-
-#define wxFONTWEIGHT_BOLD 0
 
 // DateTime
 class wxDateTime {

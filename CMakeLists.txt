@@ -94,16 +94,16 @@ set(PLUGIN_HEADERS
 )
 
 # ============================================================================
-# Build Plugin as Shared Library
+# Build Plugin as Shared Library (only when wxWidgets is available)
 # ============================================================================
-add_library(AnxietyMonitor SHARED ${PLUGIN_SOURCES} ${PLUGIN_HEADERS})
-
-# Include directories
-target_include_directories(AnxietyMonitor PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
-)
-
 if(NOT STANDALONE_BUILD)
+    add_library(AnxietyMonitor SHARED ${PLUGIN_SOURCES} ${PLUGIN_HEADERS})
+
+    # Include directories
+    target_include_directories(AnxietyMonitor PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+    )
+
     # Include Code::Blocks SDK directories
     if(WIN32)
         target_include_directories(AnxietyMonitor PRIVATE
@@ -122,23 +122,37 @@ if(NOT STANDALONE_BUILD)
     if(wxWidgets_FOUND)
         target_link_libraries(AnxietyMonitor PRIVATE ${wxWidgets_LIBRARIES})
     endif()
-endif()
 
-# Set output properties
-set_target_properties(AnxietyMonitor PROPERTIES
-    PREFIX ""
-    OUTPUT_NAME "AnxietyMonitor"
-)
+    # Set output properties
+    set_target_properties(AnxietyMonitor PROPERTIES
+        PREFIX ""
+        OUTPUT_NAME "AnxietyMonitor"
+    )
 
-# Platform-specific suffix
-if(WIN32)
-    set_target_properties(AnxietyMonitor PROPERTIES SUFFIX ".dll")
-else()
-    set_target_properties(AnxietyMonitor PROPERTIES SUFFIX ".so")
+    # Platform-specific suffix
+    if(WIN32)
+        set_target_properties(AnxietyMonitor PROPERTIES SUFFIX ".dll")
+    else()
+        set_target_properties(AnxietyMonitor PROPERTIES SUFFIX ".so")
+    endif()
+
+    # Installation
+    if(WIN32)
+        set(CB_PLUGINS_DIR "C:/Program Files/CodeBlocks/share/codeblocks/plugins" 
+            CACHE PATH "Code::Blocks plugins directory")
+    else()
+        set(CB_PLUGINS_DIR "/usr/share/codeblocks/plugins"
+            CACHE PATH "Code::Blocks plugins directory")
+    endif()
+
+    install(TARGETS AnxietyMonitor
+        LIBRARY DESTINATION ${CB_PLUGINS_DIR}
+        RUNTIME DESTINATION ${CB_PLUGINS_DIR}
+    )
 endif()
 
 # ============================================================================
-# Build Unit Tests (always available)
+# Build Unit Tests (always available - no wxWidgets needed)
 # ============================================================================
 add_executable(AnxietyMonitorTests
     tests/unit_tests.cpp
@@ -152,22 +166,6 @@ target_include_directories(AnxietyMonitorTests PRIVATE
 # Enable testing
 enable_testing()
 add_test(NAME UnitTests COMMAND AnxietyMonitorTests)
-
-# ============================================================================
-# Installation
-# ============================================================================
-if(WIN32)
-    set(CB_PLUGINS_DIR "C:/Program Files/CodeBlocks/share/codeblocks/plugins" 
-        CACHE PATH "Code::Blocks plugins directory")
-else()
-    set(CB_PLUGINS_DIR "/usr/share/codeblocks/plugins"
-        CACHE PATH "Code::Blocks plugins directory")
-endif()
-
-install(TARGETS AnxietyMonitor
-    LIBRARY DESTINATION ${CB_PLUGINS_DIR}
-    RUNTIME DESTINATION ${CB_PLUGINS_DIR}
-)
 
 # ============================================================================
 # Summary

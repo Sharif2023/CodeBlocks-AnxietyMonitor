@@ -1,7 +1,11 @@
 #ifndef EVENT_HANDLERS_H
 #define EVENT_HANDLERS_H
 
+#ifdef STANDALONE_BUILD
+#include "wx_stubs.h"
+#else
 #include <wx/event.h>
+#endif
 
 // Forward declarations for Code::Blocks SDK types
 // These are simplified - actual CB SDK has more complex headers

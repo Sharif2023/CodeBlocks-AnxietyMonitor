@@ -1,8 +1,11 @@
 #include "UIComponents.h"
+#ifndef STANDALONE_BUILD
 #include <wx/datetime.h>
+#endif
 #include <sstream>
 #include <iomanip>
 #include <cmath>
+#include "AnxietyScorer.h"
 
 namespace AnxietyMonitor {
 

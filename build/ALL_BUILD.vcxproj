@@ -174,10 +174,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="F:\CodeBlocks-AnxietyMonitor\build\AnxietyMonitor.vcxproj">
-      <Project>{22F468CD-F6F3-3082-9873-3DD1EA1327E0}</Project>
-      <Name>AnxietyMonitor</Name>
-    </ProjectReference>
     <ProjectReference Include="F:\CodeBlocks-AnxietyMonitor\build\AnxietyMonitorTests.vcxproj">
       <Project>{EEF68BD6-F93E-34A7-8998-132E01285F01}</Project>
       <Name>AnxietyMonitorTests</Name>

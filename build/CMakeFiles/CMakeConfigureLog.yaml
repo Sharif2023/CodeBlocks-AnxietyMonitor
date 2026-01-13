@@ -86,7 +86,7 @@ events:
       The output was:
       0
       MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-      Build started 1/13/2026 9:00:25 PM.
+      Build started 1/13/2026 9:31:22 PM.
       
       Project "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -115,7 +115,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.67
+      Time Elapsed 00:00:00.89
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1073,8 +1073,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-blxluh"
-      binary: "F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-blxluh"
+      source: "F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-5co5tr"
+      binary: "F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-5co5tr"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1084,39 +1084,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-blxluh'
+        Change Dir: 'F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-5co5tr'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_62ec0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40c7f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-        Build started 1/13/2026 9:00:26 PM.
+        Build started 1/13/2026 9:31:23 PM.
         
-        Project "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blxluh\\cmTC_62ec0.vcxproj" on node 1 (default targets).
+        Project "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5co5tr\\cmTC_40c7f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blxluh\\Debug\\".
-          Creating directory "cmTC_62ec0.dir\\Debug\\cmTC_62ec0.tlog\\".
+          Creating directory "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5co5tr\\Debug\\".
+          Creating directory "cmTC_40c7f.dir\\Debug\\cmTC_40c7f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_62ec0.dir\\Debug\\cmTC_62ec0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_62ec0.dir\\Debug\\cmTC_62ec0.tlog\\unsuccessfulbuild".
+          Creating "cmTC_40c7f.dir\\Debug\\cmTC_40c7f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_40c7f.dir\\Debug\\cmTC_40c7f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_62ec0.dir\\Debug\\\\" /Fd"cmTC_62ec0.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_40c7f.dir\\Debug\\\\" /Fd"cmTC_40c7f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_62ec0.dir\\Debug\\\\" /Fd"cmTC_62ec0.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_40c7f.dir\\Debug\\\\" /Fd"cmTC_40c7f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blxluh\\Debug\\cmTC_62ec0.exe" /INCREMENTAL /ILK:"cmTC_62ec0.dir\\Debug\\cmTC_62ec0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-blxluh/Debug/cmTC_62ec0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-blxluh/Debug/cmTC_62ec0.lib" /MACHINE:X64  /machine:x64 cmTC_62ec0.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_62ec0.vcxproj -> F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blxluh\\Debug\\cmTC_62ec0.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5co5tr\\Debug\\cmTC_40c7f.exe" /INCREMENTAL /ILK:"cmTC_40c7f.dir\\Debug\\cmTC_40c7f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-5co5tr/Debug/cmTC_40c7f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/CMakeScratch/TryCompile-5co5tr/Debug/cmTC_40c7f.lib" /MACHINE:X64  /machine:x64 cmTC_40c7f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_40c7f.vcxproj -> F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5co5tr\\Debug\\cmTC_40c7f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_62ec0.dir\\Debug\\cmTC_62ec0.tlog\\unsuccessfulbuild".
-          Touching "cmTC_62ec0.dir\\Debug\\cmTC_62ec0.tlog\\cmTC_62ec0.lastbuildstate".
-        Done Building Project "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blxluh\\cmTC_62ec0.vcxproj" (default targets).
+          Deleting file "cmTC_40c7f.dir\\Debug\\cmTC_40c7f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_40c7f.dir\\Debug\\cmTC_40c7f.tlog\\cmTC_40c7f.lastbuildstate".
+        Done Building Project "F:\\CodeBlocks-AnxietyMonitor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5co5tr\\cmTC_40c7f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.66
+        Time Elapsed 00:00:00.74
         
       exitCode: 0
   -
