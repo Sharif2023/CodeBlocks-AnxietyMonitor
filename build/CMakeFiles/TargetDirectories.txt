@@ -1,4 +1,6 @@
+F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/AnxietyMonitor.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/AnxietyMonitorTests.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/RUN_TESTS.dir
+F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/INSTALL.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/ALL_BUILD.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/ZERO_CHECK.dir

@@ -89,6 +89,7 @@ E:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-CXX.cmake
 E:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake
 E:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows.cmake
 E:/Program Files/CMake/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake
+E:/Program Files/CMake/share/cmake-4.2/Modules/UsewxWidgets.cmake
 F:/CodeBlocks-AnxietyMonitor/CMakeLists.txt
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/4.2.1/CMakeCXXCompiler.cmake
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/4.2.1/CMakeRCCompiler.cmake

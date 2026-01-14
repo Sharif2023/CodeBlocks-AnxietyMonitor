@@ -38,6 +38,7 @@ if(USE_SYSTEM_WXWIDGETS)
         # Try common wxWidgets installation paths on Windows
         if(WIN32)
             set(WX_SEARCH_PATHS
+                "E:/Program Files/wxWidgets-3.2.4"
                 "C:/wxWidgets-3.2.4"
                 "C:/wxWidgets-3.2"
                 "C:/wxWidgets"
@@ -54,6 +55,25 @@ if(USE_SYSTEM_WXWIDGETS)
                         include(${wxWidgets_USE_FILE})
                         message(STATUS "Found wxWidgets at: ${WX_PATH}")
                         break()
+                    else()
+                        # Manual fallback for pre-built binaries
+                        message(STATUS "Trying manual wxWidgets configuration at: ${WX_PATH}")
+                        set(WX_LIB_PATH "${WX_PATH}/lib/vc14x_x64_dll")
+                        if(EXISTS "${WX_LIB_PATH}")
+                            set(wxWidgets_FOUND TRUE)
+                            set(wxWidgets_INCLUDE_DIRS 
+                                "${WX_PATH}/include"
+                                "${WX_LIB_PATH}/mswu"
+                            )
+                            set(wxWidgets_LIBRARIES
+                                "${WX_LIB_PATH}/wxbase32u.lib"
+                                "${WX_LIB_PATH}/wxmsw32u_core.lib"
+                                "${WX_LIB_PATH}/wxmsw32u_adv.lib"
+                            )
+                            set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
+                            message(STATUS "Manually configured wxWidgets at: ${WX_PATH}")
+                            break()
+                        endif()
                     endif()
                 endif()
             endforeach()
@@ -118,8 +138,13 @@ if(NOT STANDALONE_BUILD)
         )
     endif()
     
+    # Define CODEBLOCKS_SDK_INCLUDED to use real CB SDK types
+    target_compile_definitions(AnxietyMonitor PRIVATE CODEBLOCKS_SDK_INCLUDED)
+    
     # Link wxWidgets
     if(wxWidgets_FOUND)
+        target_include_directories(AnxietyMonitor PRIVATE ${wxWidgets_INCLUDE_DIRS})
+        target_compile_definitions(AnxietyMonitor PRIVATE ${wxWidgets_DEFINITIONS})
         target_link_libraries(AnxietyMonitor PRIVATE ${wxWidgets_LIBRARIES})
     endif()
 
