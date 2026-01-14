@@ -1,308 +1,309 @@
 CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: \
  F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp \
  F:\CodeBlocks-AnxietyMonitor\src\DataCollector.h \
- E:/Program\ Files/wxWidgets/install/include/wx/timer.h \
- E:/Program\ Files/wxWidgets/install/include/wx/defs.h \
- E:/Program\ Files/wxWidgets/install/include/wx/platform.h \
- E:/Program\ Files/wxWidgets/install/include/wx/compiler.h \
- E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/mswu/wx/setup.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/libraries.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/gccpriv.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/winver.h \
- C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
- C:/msys64/ucrt64/include/_mingw_secapi.h \
- C:/msys64/ucrt64/include/vadefs.h \
- C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- C:/msys64/ucrt64/include/w32api.h \
- E:/Program\ Files/wxWidgets/install/include/wx/chkconf.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/chkconf.h \
- E:/Program\ Files/wxWidgets/install/include/wx/version.h \
- E:/Program\ Files/wxWidgets/install/include/wx/cpp.h \
- E:/Program\ Files/wxWidgets/install/include/wx/dlimpexp.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
- C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
- C:/msys64/ucrt64/include/corecrt.h \
- E:/Program\ Files/wxWidgets/install/include/wx/types.h \
- C:/msys64/ucrt64/include/sys/types.h \
- C:/msys64/ucrt64/include/_mingw_off_t.h \
- E:/Program\ Files/wxWidgets/install/include/wx/debug.h \
- C:/msys64/ucrt64/include/assert.h \
- C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
- C:/msys64/ucrt64/include/stdlib.h \
- C:/msys64/ucrt64/include/corecrt_wstdlib.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
- C:/msys64/ucrt64/include/limits.h \
- C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
- C:/msys64/ucrt64/include/malloc.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
- C:/msys64/ucrt64/include/errno.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
- E:/Program\ Files/wxWidgets/install/include/wx/chartype.h \
- C:/msys64/ucrt64/include/wchar.h \
- C:/msys64/ucrt64/include/corecrt_stdio_config.h \
- C:/msys64/ucrt64/include/corecrt_wctype.h \
- C:/msys64/ucrt64/include/_mingw_stat64.h \
- C:/msys64/ucrt64/include/swprintf.inl \
- C:/msys64/ucrt64/include/sec_api/wchar_s.h \
- C:/msys64/ucrt64/include/string.h \
- C:/msys64/ucrt64/include/sec_api/string_s.h \
- C:/msys64/ucrt64/include/ctype.h C:/msys64/ucrt64/include/tchar.h \
- C:/msys64/ucrt64/include/sec_api/tchar_s.h \
- E:/Program\ Files/wxWidgets/install/include/wx/features.h \
- E:/Program\ Files/wxWidgets/install/include/wx/object.h \
- E:/Program\ Files/wxWidgets/install/include/wx/string.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
- C:/msys64/ucrt64/include/stdarg.h \
- C:/msys64/ucrt64/include/_mingw_stdarg.h \
- E:/Program\ Files/wxWidgets/install/include/wx/wxcrtbase.h \
- C:/msys64/ucrt64/include/stdio.h \
- C:/msys64/ucrt64/include/sec_api/stdio_s.h \
- C:/msys64/ucrt64/include/wctype.h C:/msys64/ucrt64/include/time.h \
- C:/msys64/ucrt64/include/sys/timeb.h \
- C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
- C:/msys64/ucrt64/include/_timeval.h \
- C:/msys64/ucrt64/include/pthread_time.h \
- C:/msys64/ucrt64/include/pthread_compat.h C:/msys64/ucrt64/include/io.h \
- E:/Program\ Files/wxWidgets/install/include/wx/strvararg.h \
- E:/Program\ Files/wxWidgets/install/include/wx/strconv.h \
- E:/Program\ Files/wxWidgets/install/include/wx/buffer.h \
- E:/Program\ Files/wxWidgets/install/include/wx/iosfwrap.h \
- C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/winundef.h \
- E:/Program\ Files/wxWidgets/install/include/wx/fontenc.h \
- E:/Program\ Files/wxWidgets/install/include/wx/unichar.h \
- C:/msys64/ucrt64/include/c++/15.2.0/string \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/new \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
- C:/msys64/ucrt64/include/c++/15.2.0/clocale \
- C:/msys64/ucrt64/include/locale.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cctype \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
- C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
- C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
- C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bit \
- C:/msys64/ucrt64/include/c++/15.2.0/concepts \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
- C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
- C:/msys64/ucrt64/include/c++/15.2.0/string_view \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
- C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
- C:/msys64/ucrt64/include/c++/15.2.0/tuple \
- C:/msys64/ucrt64/include/c++/15.2.0/utility \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h \
- C:/msys64/ucrt64/include/c++/15.2.0/vector \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
- E:/Program\ Files/wxWidgets/install/include/wx/stringops.h \
- E:/Program\ Files/wxWidgets/install/include/wx/beforestd.h \
- E:/Program\ Files/wxWidgets/install/include/wx/afterstd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/functional \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
- C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
- C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
- C:/msys64/ucrt64/include/c++/15.2.0/array \
- C:/msys64/ucrt64/include/c++/15.2.0/compare \
- E:/Program\ Files/wxWidgets/install/include/wx/xti.h \
- E:/Program\ Files/wxWidgets/install/include/wx/rtti.h \
- E:/Program\ Files/wxWidgets/install/include/wx/flags.h \
- E:/Program\ Files/wxWidgets/install/include/wx/xti2.h \
- E:/Program\ Files/wxWidgets/install/include/wx/longlong.h \
- C:/msys64/ucrt64/include/c++/15.2.0/limits \
- E:/Program\ Files/wxWidgets/install/include/wx/event.h \
- E:/Program\ Files/wxWidgets/install/include/wx/clntdata.h \
- E:/Program\ Files/wxWidgets/install/include/wx/math.h \
- C:/msys64/ucrt64/include/c++/15.2.0/math.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cmath \
- C:/msys64/ucrt64/include/math.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/gamma.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/beta_function.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/ell_integral.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/exp_integral.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/hypergeometric.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/legendre_function.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- E:/Program\ Files/wxWidgets/install/include/wx/gdicmn.h \
- E:/Program\ Files/wxWidgets/install/include/wx/list.h \
- E:/Program\ Files/wxWidgets/install/include/wx/vector.h \
- C:/msys64/ucrt64/include/c++/15.2.0/algorithm \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
- C:/msys64/ucrt64/include/c++/15.2.0/iterator \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stream_iterator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
- C:/msys64/ucrt64/include/c++/15.2.0/streambuf \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ext/atomicity.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/msys64/ucrt64/include/pthread.h C:/msys64/ucrt64/include/process.h \
- C:/msys64/ucrt64/include/corecrt_startup.h \
- C:/msys64/ucrt64/include/signal.h \
- C:/msys64/ucrt64/include/pthread_signal.h \
- C:/msys64/ucrt64/include/sched.h \
- C:/msys64/ucrt64/include/pthread_unistd.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/system_error \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
- C:/msys64/ucrt64/include/c++/15.2.0/exception \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/list \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_list.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/list.tcc \
- E:/Program\ Files/wxWidgets/install/include/wx/geometry.h \
- E:/Program\ Files/wxWidgets/install/include/wx/utils.h \
- E:/Program\ Files/wxWidgets/install/include/wx/filefn.h \
- E:/Program\ Files/wxWidgets/install/include/wx/arrstr.h \
- E:/Program\ Files/wxWidgets/install/include/wx/dynarray.h \
- C:/msys64/ucrt64/include/sys/stat.h C:/msys64/ucrt64/include/fcntl.h \
- E:/Program\ Files/wxWidgets/install/include/wx/versioninfo.h \
- E:/Program\ Files/wxWidgets/install/include/wx/meta/implicitconversion.h \
- E:/Program\ Files/wxWidgets/install/include/wx/meta/if.h \
- E:/Program\ Files/wxWidgets/install/include/wx/busycursor.h \
- E:/Program\ Files/wxWidgets/install/include/wx/mousestate.h \
- E:/Program\ Files/wxWidgets/install/include/wx/kbdstate.h \
- E:/Program\ Files/wxWidgets/install/include/wx/platinfo.h \
- E:/Program\ Files/wxWidgets/install/include/wx/wxcrt.h \
- E:/Program\ Files/wxWidgets/install/include/wx/cursor.h \
- E:/Program\ Files/wxWidgets/install/include/wx/gdiobj.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/gdiimage.h \
- E:/Program\ Files/wxWidgets/install/include/wx/msw/cursor.h \
- E:/Program\ Files/wxWidgets/install/include/wx/itemid.h \
- E:/Program\ Files/wxWidgets/install/include/wx/thread.h \
- E:/Program\ Files/wxWidgets/install/include/wx/tracker.h \
- E:/Program\ Files/wxWidgets/install/include/wx/typeinfo.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstring \
- E:/Program\ Files/wxWidgets/install/include/wx/any.h \
- E:/Program\ Files/wxWidgets/install/include/wx/datetime.h \
- E:/Program\ Files/wxWidgets/install/include/wx/anystr.h \
- E:/Program\ Files/wxWidgets/install/include/wx/variant.h \
- E:/Program\ Files/wxWidgets/install/include/wx/recguard.h \
- E:/Program\ Files/wxWidgets/install/include/wx/sharedptr.h \
- E:/Program\ Files/wxWidgets/install/include/wx/atomic.h \
- E:/Program\ Files/wxWidgets/install/include/wx/meta/convertible.h \
- E:/Program\ Files/wxWidgets/install/include/wx/meta/removeref.h \
- E:/Program\ Files/wxWidgets/install/include/wx/stopwatch.h \
- E:/Program\ Files/wxWidgets/install/include/wx/time.h \
- C:/msys64/ucrt64/include/c++/15.2.0/chrono \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/chrono.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ratio \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
- C:/msys64/ucrt64/include/c++/15.2.0/ctime \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h \
- C:/msys64/ucrt64/include/c++/15.2.0/mutex \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/std_mutex.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/timer.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/defs.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/platform.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/compiler.h \
+ E:/Program\ Files/wxWidgets-3.2.4/lib/vc14x_x64_dll/mswu/wx/setup.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/libraries.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/gccpriv.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/winver.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/w32api.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/chkconf.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/chkconf.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/version.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/cpp.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/dlimpexp.h \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stddef.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/corecrt.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/types.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sys/types.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/debug.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/assert.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/stdlib.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cstdlib \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/pstl/pstl_config.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/errno.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/std_abs.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/chartype.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/wchar.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/string.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/ctype.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/tchar.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/features.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/object.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/memory.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/string.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdarg.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/wxcrtbase.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/wctype.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/time.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sys/timeb.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_timeval.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/pthread_time.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/io.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/strvararg.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/strconv.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/buffer.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/fontenc.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/unichar.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/stringimpl.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/beforestd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/string \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/requires_hosted.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stringfwd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/memoryfwd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/char_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/postypes.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cwchar \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/type_traits \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/version.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/allocator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/new_allocator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/new \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/exception.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/functexcept.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/exception_defines.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/move.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/cpp_type_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/localefwd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/clocale \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/locale.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/iosfwd \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cctype \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/ostream_insert.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/cxxabi_forced.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/concept_check.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/debug/assertions.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_iterator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/type_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/ptr_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_function.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/backward/binders.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/numeric_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_algobase.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_pair.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/utility.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/debug/debug.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/predefined_ops.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bit \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/concepts \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/refwrap.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/invoke.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/range_access.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/initializer_list \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/basic_string.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/alloc_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/alloc_traits.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_construct.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/string_view \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/functional_hash.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/hash_bytes.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/string_view.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/string_conversions.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cstdio \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cerrno \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/charconv.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/basic_string.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/memory_resource.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cstddef \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/uses_allocator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/uses_allocator_args.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tuple \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/afterstd.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/winundef.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/algorithm \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_algo.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/algorithmfwd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_heap.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/uniform_int_dist.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/utility \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_relops.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/stringops.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/functional \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/std_function.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/typeinfo \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/unordered_map \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/unordered_map.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/hashtable.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/hashtable_policy.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/aligned_buffer.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/enable_special_members.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/node_handle.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/erase_if.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/vector \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_uninitialized.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_vector.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_bvector.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/vector.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/array \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/compare \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/iosfwrap.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msgout.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/xti.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/rtti.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/flags.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/xti2.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/longlong.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/limits \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/event.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/clntdata.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/hashmap.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/wxcrt.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/math.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/math.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cmath \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/specfun.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/gamma.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/special_function_util.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/bessel_function.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/beta_function.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/ell_integral.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/exp_integral.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/legendre_function.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/gdicmn.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/list.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/vector.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/scopeguard.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/except.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/movable.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/pod.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/if.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/iterator \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stream_iterator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/streambuf_iterator.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/streambuf \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/ios_base.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ext/atomicity.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/pthread.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/process.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/corecrt_startup.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/signal.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/pthread_signal.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/pthread_compat.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/pthread_unistd.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_classes.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_classes.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/system_error \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/stdexcept \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/exception \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/exception_ptr.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/nested_exception.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/streambuf.tcc \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/cursor.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/gdiobj.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/gdiimage.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/msw/cursor.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/utils.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/filefn.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/arrstr.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/dynarray.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sys/stat.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/fcntl.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/versioninfo.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/implicitconversion.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/mousestate.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/kbdstate.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/platinfo.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/thread.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/tracker.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/typeinfo.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/any.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/datetime.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/anystr.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/variant.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/convertible.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/meta/removeref.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/stopwatch.h \
+ E:/Program\ Files/wxWidgets-3.2.4/include/wx/time.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/chrono \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/chrono.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ratio \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cstdint \
+ E:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+ E:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdint.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ctime \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/parse_numbers.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/mutex \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/std_mutex.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/unique_lock.h \
  F:\CodeBlocks-AnxietyMonitor\src\MetricsData.h \
- C:/msys64/ucrt64/include/c++/15.2.0/deque \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/deque \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_deque.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/deque.tcc \
  F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.h \
- C:/msys64/ucrt64/include/c++/15.2.0/numeric \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
- C:/msys64/ucrt64/include/c++/15.2.0/iomanip \
- C:/msys64/ucrt64/include/c++/15.2.0/locale \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cwctype \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets_nonio.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/codecvt.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets_nonio.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_conv.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/quoted_string.h \
- C:/msys64/ucrt64/include/c++/15.2.0/sstream \
- C:/msys64/ucrt64/include/c++/15.2.0/istream \
- C:/msys64/ucrt64/include/c++/15.2.0/ios \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/ostream \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/numeric \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/stl_numeric.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/iomanip \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/locale \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_facets.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/cwctype \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_facets.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_facets_nonio.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/codecvt.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/locale_conv.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/quoted_string.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/sstream \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/istream \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ios \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/basic_ios.h \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/basic_ios.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/ostream \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/ostream.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/istream.tcc \
+ E:/Program\ Files/CodeBlocks/MinGW/include/c++/14.2.0/bits/sstream.tcc

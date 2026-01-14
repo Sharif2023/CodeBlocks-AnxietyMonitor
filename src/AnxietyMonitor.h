@@ -57,12 +57,15 @@ class AnxietyMonitorPlugin : public cbPlugin
 // Simplified plugin base for compilation without CB SDK
 class cbConfigurationPanel {
 public:
-    virtual ~cbConfigurationPanel() {}
+  virtual ~cbConfigurationPanel() {}
 };
+
+class FileTreeData;
 
 class cbPlugin : public wxEvtHandler {
 public:
   enum PluginType { ptTool = 1 };
+  using ModuleType = int;
   virtual void OnAttach() {}
   virtual void OnRelease(bool appShutDown) { (void)appShutDown; }
   virtual int GetConfigurationGroup() const { return 0; }
@@ -71,9 +74,11 @@ public:
     return false;
   }
   virtual void BuildMenu(wxMenuBar *menuBar) { (void)menuBar; }
-  virtual void BuildModuleMenu(const int type, wxMenu *menu) {
+  virtual void BuildModuleMenu(const int type, wxMenu *menu,
+                               const FileTreeData *data = nullptr) {
     (void)type;
     (void)menu;
+    (void)data;
   }
   virtual cbConfigurationPanel *GetConfigurationPanel(wxWindow *parent) {
     (void)parent;
@@ -124,7 +129,8 @@ public:
   /**
    * @brief Add items to context menus.
    */
-  void BuildModuleMenu(const int type, wxMenu *menu) override;
+  void BuildModuleMenu(const ModuleType type, wxMenu *menu,
+                       const FileTreeData *data = nullptr) override;
 
   // =========================================================================
   // Session Control
@@ -198,6 +204,14 @@ protected:
   void OnMenuEnd(wxCommandEvent &event);
   void OnMenuShowPanel(wxCommandEvent &event);
 
+  // CB SDK Event Handlers (Delegate to EventHandlers class)
+#ifdef CODEBLOCKS_SDK_INCLUDED
+  void OnEditorEvent(CodeBlocksEvent &event);
+  void OnCompilerStart(CodeBlocksEvent &event);
+  void OnCompilerFinished(CodeBlocksEvent &event);
+  void OnAppStartupDone(CodeBlocksEvent &event);
+#endif
+
 private:
   // =========================================================================
   // Initialization
@@ -267,10 +281,5 @@ private:
   // Event table declaration
   wxDECLARE_EVENT_TABLE();
 };
-
-// Plugin registration macros (for Code::Blocks)
-#ifdef CODEBLOCKS_SDK_INCLUDED
-CB_DECLARE_PLUGIN();
-#endif
 
 #endif // ANXIETY_MONITOR_H

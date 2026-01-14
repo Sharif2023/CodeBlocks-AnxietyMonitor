@@ -76,97 +76,97 @@ CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj: CMakeFiles/AnxietyMoni
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/AnxietyMonitor.cpp
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp
 
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp > CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.i
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp > CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.i
 
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.s
-
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/DataCollector.cpp
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp
-
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp > CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.i
-
-CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp -o CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.s
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\AnxietyMonitor.cpp -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyMonitor.cpp.s
 
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/AnxietyScorer.cpp
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj"
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp
 
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp > CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.i
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp > CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.i
 
 CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.s
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\AnxietyScorer.cpp -o CMakeFiles\AnxietyMonitor.dir\src\AnxietyScorer.cpp.s
 
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/CSVWriter.cpp
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj"
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp
 
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp > CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.i
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp > CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.i
 
 CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp -o CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.s
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\CSVWriter.cpp -o CMakeFiles\AnxietyMonitor.dir\src\CSVWriter.cpp.s
+
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/DataCollector.cpp
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj"
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp
+
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.i"
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp > CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.i
+
+CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.s"
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\DataCollector.cpp -o CMakeFiles\AnxietyMonitor.dir\src\DataCollector.cpp.s
 
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/EventHandlers.cpp
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp
 
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp > CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.i
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp > CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.i
 
 CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp -o CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.s
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\EventHandlers.cpp -o CMakeFiles\AnxietyMonitor.dir\src\EventHandlers.cpp.s
 
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj: CMakeFiles/AnxietyMonitor.dir/flags.make
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj: CMakeFiles/AnxietyMonitor.dir/includes_CXX.rsp
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj: F:/CodeBlocks-AnxietyMonitor/src/UIComponents.cpp
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj: CMakeFiles/AnxietyMonitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\CodeBlocks-AnxietyMonitor\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj -MF CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.obj.d -o CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.obj -c F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp
 
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp > CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.i
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp > CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.i
 
 CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp -o CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.s
+	"E:\Program Files\CodeBlocks\MinGW\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\CodeBlocks-AnxietyMonitor\src\UIComponents.cpp -o CMakeFiles\AnxietyMonitor.dir\src\UIComponents.cpp.s
 
 # Object files for target AnxietyMonitor
 AnxietyMonitor_OBJECTS = \
 "CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj" \
-"CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj" \
 "CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj" \
 "CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj" \
+"CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj" \
 "CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj" \
 "CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj"
 
@@ -174,15 +174,14 @@ AnxietyMonitor_OBJECTS = \
 AnxietyMonitor_EXTERNAL_OBJECTS =
 
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/AnxietyMonitor.cpp.obj
-AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj
+AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/DataCollector.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/build.make
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxbase33u.a
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxmsw33u_core.a
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxmsw33u_adv.a
+AnxietyMonitor.dll: E:/Program\ Files/CodeBlocks/codeblocks.dll
+AnxietyMonitor.dll: E:/Program\ Files/CodeBlocks/wxmsw32u_gcc_custom.dll
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/linkLibs.rsp
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/objects1.rsp
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/link.txt

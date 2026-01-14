@@ -64,16 +64,6 @@ CMAKE_BINARY_DIR = F:\CodeBlocks-AnxietyMonitor\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	"E:\Program Files\CMake\bin\ctest.exe" $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -183,19 +173,6 @@ AnxietyMonitor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitor.dir\build.make CMakeFiles/AnxietyMonitor.dir/build
 .PHONY : AnxietyMonitor/fast
 
-#=============================================================================
-# Target rules for targets named AnxietyMonitorTests
-
-# Build rule for target.
-AnxietyMonitorTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AnxietyMonitorTests
-.PHONY : AnxietyMonitorTests
-
-# fast build rule for target.
-AnxietyMonitorTests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/build
-.PHONY : AnxietyMonitorTests/fast
-
 src/AnxietyMonitor.obj: src/AnxietyMonitor.cpp.obj
 .PHONY : src/AnxietyMonitor.obj
 
@@ -226,7 +203,6 @@ src/AnxietyScorer.obj: src/AnxietyScorer.cpp.obj
 # target to build an object file
 src/AnxietyScorer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitor.dir\build.make CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/src/AnxietyScorer.cpp.obj
 .PHONY : src/AnxietyScorer.cpp.obj
 
 src/AnxietyScorer.i: src/AnxietyScorer.cpp.i
@@ -235,7 +211,6 @@ src/AnxietyScorer.i: src/AnxietyScorer.cpp.i
 # target to preprocess a source file
 src/AnxietyScorer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitor.dir\build.make CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/src/AnxietyScorer.cpp.i
 .PHONY : src/AnxietyScorer.cpp.i
 
 src/AnxietyScorer.s: src/AnxietyScorer.cpp.s
@@ -244,7 +219,6 @@ src/AnxietyScorer.s: src/AnxietyScorer.cpp.s
 # target to generate assembly for a file
 src/AnxietyScorer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitor.dir\build.make CMakeFiles/AnxietyMonitor.dir/src/AnxietyScorer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/src/AnxietyScorer.cpp.s
 .PHONY : src/AnxietyScorer.cpp.s
 
 src/CSVWriter.obj: src/CSVWriter.cpp.obj
@@ -343,30 +317,6 @@ src/UIComponents.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitor.dir\build.make CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.s
 .PHONY : src/UIComponents.cpp.s
 
-tests/unit_tests.obj: tests/unit_tests.cpp.obj
-.PHONY : tests/unit_tests.obj
-
-# target to build an object file
-tests/unit_tests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/tests/unit_tests.cpp.obj
-.PHONY : tests/unit_tests.cpp.obj
-
-tests/unit_tests.i: tests/unit_tests.cpp.i
-.PHONY : tests/unit_tests.i
-
-# target to preprocess a source file
-tests/unit_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/tests/unit_tests.cpp.i
-.PHONY : tests/unit_tests.cpp.i
-
-tests/unit_tests.s: tests/unit_tests.cpp.s
-.PHONY : tests/unit_tests.s
-
-# target to generate assembly for a file
-tests/unit_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnxietyMonitorTests.dir\build.make CMakeFiles/AnxietyMonitorTests.dir/tests/unit_tests.cpp.s
-.PHONY : tests/unit_tests.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -379,9 +329,7 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... test
 	@echo ... AnxietyMonitor
-	@echo ... AnxietyMonitorTests
 	@echo ... src/AnxietyMonitor.obj
 	@echo ... src/AnxietyMonitor.i
 	@echo ... src/AnxietyMonitor.s
@@ -400,9 +348,6 @@ help:
 	@echo ... src/UIComponents.obj
 	@echo ... src/UIComponents.i
 	@echo ... src/UIComponents.s
-	@echo ... tests/unit_tests.obj
-	@echo ... tests/unit_tests.i
-	@echo ... tests/unit_tests.s
 .PHONY : help
 
 

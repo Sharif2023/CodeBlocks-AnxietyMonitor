@@ -38,19 +38,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/Program Files/CodeBlocks/share/codeblocks/plugins/AnxietyMonitor.dll")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  file(INSTALL DESTINATION "C:/Program Files/CodeBlocks/share/codeblocks/plugins" TYPE SHARED_LIBRARY FILES "F:/CodeBlocks-AnxietyMonitor/build/AnxietyMonitor.dll")
-  if(EXISTS "$ENV{DESTDIR}/C:/Program Files/CodeBlocks/share/codeblocks/plugins/AnxietyMonitor.dll" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/C:/Program Files/CodeBlocks/share/codeblocks/plugins/AnxietyMonitor.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "F:/CodeBlocks-AnxietyMonitor/build/AnxietyMonitor.dll")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/AnxietyMonitor.dll" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/AnxietyMonitor.dll")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/msys64/ucrt64/bin/strip.exe" "$ENV{DESTDIR}/C:/Program Files/CodeBlocks/share/codeblocks/plugins/AnxietyMonitor.dll")
+      execute_process(COMMAND "C:/msys64/ucrt64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/AnxietyMonitor.dll")
     endif()
   endif()
 endif()

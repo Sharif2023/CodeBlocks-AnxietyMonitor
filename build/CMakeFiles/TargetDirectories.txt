@@ -1,6 +1,4 @@
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/AnxietyMonitor.dir
-F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/AnxietyMonitorTests.dir
-F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/test.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/edit_cache.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/rebuild_cache.dir
 F:/CodeBlocks-AnxietyMonitor/build/CMakeFiles/list_install_components.dir
