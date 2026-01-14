@@ -27,7 +27,27 @@ endif()
 # ============================================================================
 set(wxWidgets_FOUND FALSE)
 
-if(USE_SYSTEM_WXWIDGETS)
+# FORCE MinGW wxWidgets configuration if using MinGW and libs exist
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" AND WIN32)
+    set(MINGW_WX_PATH "E:/wxWidgets/install")
+    set(MINGW_WX_LIB_PATH "${MINGW_WX_PATH}/lib/gcc_x64_dll")
+    if(EXISTS "${MINGW_WX_LIB_PATH}/libwxbase33u.a")
+        message(STATUS "Using forced MinGW wxWidgets 3.3 at: ${MINGW_WX_PATH}")
+        set(wxWidgets_FOUND TRUE)
+        set(wxWidgets_INCLUDE_DIRS 
+            "${MINGW_WX_PATH}/include"
+            "${MINGW_WX_LIB_PATH}/mswu"
+        )
+        set(wxWidgets_LIBRARIES
+            "${MINGW_WX_LIB_PATH}/libwxbase33u.a"
+            "${MINGW_WX_LIB_PATH}/libwxmsw33u_core.a"
+            "${MINGW_WX_LIB_PATH}/libwxmsw33u_adv.a"
+        )
+        set(wxWidgets_DEFINITIONS -DWXUSINGDLL -D__WXMSW__ -D_UNICODE)
+    endif()
+endif()
+
+if(USE_SYSTEM_WXWIDGETS AND NOT wxWidgets_FOUND)
     # Try to find wxWidgets
     find_package(wxWidgets 3.0 QUIET COMPONENTS core base adv)
     
@@ -38,12 +58,13 @@ if(USE_SYSTEM_WXWIDGETS)
         # Try common wxWidgets installation paths on Windows
         if(WIN32)
             set(WX_SEARCH_PATHS
+                "E:/Program Files/wxWidgets/install"
                 "E:/Program Files/wxWidgets-3.2.4"
-                "C:/wxWidgets-3.2.4"
-                "C:/wxWidgets-3.2"
-                "C:/wxWidgets"
-                "E:/wxWidgets-3.2.4"
-                "E:/wxWidgets"
+                "E:/Program Files/wxWidgets-3.2.4"
+                "E:/Program Files/wxWidgets-3.2"
+                "E:/Program Files/wxWidgets"
+                "E:/Program Files/wxWidgets-3.2.4"
+                "E:/Program Files/wxWidgets"
                 "$ENV{WXWIN}"
             )
             
@@ -56,22 +77,38 @@ if(USE_SYSTEM_WXWIDGETS)
                         message(STATUS "Found wxWidgets at: ${WX_PATH}")
                         break()
                     else()
-                        # Manual fallback for pre-built binaries
-                        message(STATUS "Trying manual wxWidgets configuration at: ${WX_PATH}")
-                        set(WX_LIB_PATH "${WX_PATH}/lib/vc14x_x64_dll")
-                        if(EXISTS "${WX_LIB_PATH}")
+                        # Manual fallback for MinGW pre-built binaries
+                        set(WX_LIB_PATH_GCC "${WX_PATH}/lib/gcc_x64_dll")
+                        set(WX_LIB_PATH_MSVC "${WX_PATH}/lib/vc14x_x64_dll")
+                        
+                        if(EXISTS "${WX_LIB_PATH_GCC}")
+                            message(STATUS "Manually configuring MinGW wxWidgets at: ${WX_PATH}")
                             set(wxWidgets_FOUND TRUE)
                             set(wxWidgets_INCLUDE_DIRS 
                                 "${WX_PATH}/include"
-                                "${WX_LIB_PATH}/mswu"
+                                "${WX_LIB_PATH_GCC}/mswu"
                             )
+                            # MinGW uses .a libraries
                             set(wxWidgets_LIBRARIES
-                                "${WX_LIB_PATH}/wxbase32u.lib"
-                                "${WX_LIB_PATH}/wxmsw32u_core.lib"
-                                "${WX_LIB_PATH}/wxmsw32u_adv.lib"
+                                "${WX_LIB_PATH_GCC}/libwxbase32u.a"
+                                "${WX_LIB_PATH_GCC}/libwxmsw32u_core.a"
+                                "${WX_LIB_PATH_GCC}/libwxmsw32u_adv.a"
                             )
                             set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
-                            message(STATUS "Manually configured wxWidgets at: ${WX_PATH}")
+                            break()
+                        elseif(EXISTS "${WX_LIB_PATH_MSVC}")
+                            message(STATUS "Manually configuring MSVC wxWidgets at: ${WX_PATH}")
+                            set(wxWidgets_FOUND TRUE)
+                            set(wxWidgets_INCLUDE_DIRS 
+                                "${WX_PATH}/include"
+                                "${WX_LIB_PATH_MSVC}/mswu"
+                            )
+                            set(wxWidgets_LIBRARIES
+                                "${WX_LIB_PATH_MSVC}/wxbase32u.lib"
+                                "${WX_LIB_PATH_MSVC}/wxmsw32u_core.lib"
+                                "${WX_LIB_PATH_MSVC}/wxmsw32u_adv.lib"
+                            )
+                            set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
                             break()
                         endif()
                     endif()
@@ -138,8 +175,9 @@ if(NOT STANDALONE_BUILD)
         )
     endif()
     
-    # Define CODEBLOCKS_SDK_INCLUDED to use real CB SDK types
-    target_compile_definitions(AnxietyMonitor PRIVATE CODEBLOCKS_SDK_INCLUDED)
+    # NOTE: CODEBLOCKS_SDK_INCLUDED requires full CB compilation
+    # Using stub classes instead for simpler deployment
+    # target_compile_definitions(AnxietyMonitor PRIVATE CODEBLOCKS_SDK_INCLUDED)
     
     # Link wxWidgets
     if(wxWidgets_FOUND)
