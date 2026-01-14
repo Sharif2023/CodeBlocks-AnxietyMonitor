@@ -29,7 +29,7 @@ set(wxWidgets_FOUND FALSE)
 
 # FORCE MinGW wxWidgets configuration if using MinGW and libs exist
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" AND WIN32)
-    set(MINGW_WX_PATH "E:/wxWidgets/install")
+    set(MINGW_WX_PATH "E:/Program Files/wxWidgets/install")
     set(MINGW_WX_LIB_PATH "${MINGW_WX_PATH}/lib/gcc_x64_dll")
     if(EXISTS "${MINGW_WX_LIB_PATH}/libwxbase33u.a")
         message(STATUS "Using forced MinGW wxWidgets 3.3 at: ${MINGW_WX_PATH}")
@@ -82,20 +82,36 @@ if(USE_SYSTEM_WXWIDGETS AND NOT wxWidgets_FOUND)
                         set(WX_LIB_PATH_MSVC "${WX_PATH}/lib/vc14x_x64_dll")
                         
                         if(EXISTS "${WX_LIB_PATH_GCC}")
-                            message(STATUS "Manually configuring MinGW wxWidgets at: ${WX_PATH}")
-                            set(wxWidgets_FOUND TRUE)
-                            set(wxWidgets_INCLUDE_DIRS 
-                                "${WX_PATH}/include"
-                                "${WX_LIB_PATH_GCC}/mswu"
-                            )
-                            # MinGW uses .a libraries
-                            set(wxWidgets_LIBRARIES
-                                "${WX_LIB_PATH_GCC}/libwxbase32u.a"
-                                "${WX_LIB_PATH_GCC}/libwxmsw32u_core.a"
-                                "${WX_LIB_PATH_GCC}/libwxmsw32u_adv.a"
-                            )
-                            set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
-                            break()
+                            # Check for wxWidgets 3.3 libraries first, then 3.2
+                            if(EXISTS "${WX_LIB_PATH_GCC}/libwxbase33u.a")
+                                message(STATUS "Manually configuring MinGW wxWidgets 3.3 at: ${WX_PATH}")
+                                set(wxWidgets_FOUND TRUE)
+                                set(wxWidgets_INCLUDE_DIRS 
+                                    "${WX_PATH}/include"
+                                    "${WX_LIB_PATH_GCC}/mswu"
+                                )
+                                set(wxWidgets_LIBRARIES
+                                    "${WX_LIB_PATH_GCC}/libwxbase33u.a"
+                                    "${WX_LIB_PATH_GCC}/libwxmsw33u_core.a"
+                                    "${WX_LIB_PATH_GCC}/libwxmsw33u_adv.a"
+                                )
+                                set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
+                                break()
+                            elseif(EXISTS "${WX_LIB_PATH_GCC}/libwxbase32u.a")
+                                message(STATUS "Manually configuring MinGW wxWidgets 3.2 at: ${WX_PATH}")
+                                set(wxWidgets_FOUND TRUE)
+                                set(wxWidgets_INCLUDE_DIRS 
+                                    "${WX_PATH}/include"
+                                    "${WX_LIB_PATH_GCC}/mswu"
+                                )
+                                set(wxWidgets_LIBRARIES
+                                    "${WX_LIB_PATH_GCC}/libwxbase32u.a"
+                                    "${WX_LIB_PATH_GCC}/libwxmsw32u_core.a"
+                                    "${WX_LIB_PATH_GCC}/libwxmsw32u_adv.a"
+                                )
+                                set(wxWidgets_DEFINITIONS "-DWXUSINGDLL" "-D__WXMSW__" "-D_UNICODE")
+                                break()
+                            endif()
                         elseif(EXISTS "${WX_LIB_PATH_MSVC}")
                             message(STATUS "Manually configuring MSVC wxWidgets at: ${WX_PATH}")
                             set(wxWidgets_FOUND TRUE)

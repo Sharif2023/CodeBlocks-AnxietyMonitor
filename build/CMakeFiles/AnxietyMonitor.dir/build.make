@@ -180,9 +180,9 @@ AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/CSVWriter.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/EventHandlers.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/src/UIComponents.cpp.obj
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/build.make
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets-3.2.4/lib/vc14x_x64_dll/wxbase32u.lib
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets-3.2.4/lib/vc14x_x64_dll/wxmsw32u_core.lib
-AnxietyMonitor.dll: E:/Program\ Files/wxWidgets-3.2.4/lib/vc14x_x64_dll/wxmsw32u_adv.lib
+AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxbase33u.a
+AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxmsw33u_core.a
+AnxietyMonitor.dll: E:/Program\ Files/wxWidgets/install/lib/gcc_x64_dll/libwxmsw33u_adv.a
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/linkLibs.rsp
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/objects1.rsp
 AnxietyMonitor.dll: CMakeFiles/AnxietyMonitor.dir/link.txt

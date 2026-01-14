@@ -244,7 +244,7 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Code::Blocks installation path
-CODEBLOCKS_SDK_PATH:PATH=E:/Program Files/codeblocks_25.03/src
+CODEBLOCKS_SDK_PATH:PATH=E:/Program Files/CodeBlocks
 
 //Build without Code::Blocks SDK dependencies
 STANDALONE_BUILD:BOOL=OFF
@@ -594,7 +594,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //wxWidgets_LIB_DIR
 WX_LIB_DIR:INTERNAL=wxWidgets_LIB_DIR-NOTFOUND
 //wxWidgets_ROOT_DIR
-WX_ROOT_DIR:INTERNAL=E:/Program Files/wxWidgets-3.2.4
+WX_ROOT_DIR:INTERNAL=E:/Program Files/wxWidgets/install
 //ADVANCED property for variable: WX_adv
 WX_adv-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: WX_advd

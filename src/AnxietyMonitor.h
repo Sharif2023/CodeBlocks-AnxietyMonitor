@@ -55,7 +55,10 @@ class StatusBarManager;
 class AnxietyMonitorPlugin : public cbPlugin
 #else
 // Simplified plugin base for compilation without CB SDK
-class cbConfigurationPanel {};
+class cbConfigurationPanel {
+public:
+    virtual ~cbConfigurationPanel() {}
+};
 
 class cbPlugin : public wxEvtHandler {
 public:
