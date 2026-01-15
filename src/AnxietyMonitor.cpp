@@ -15,7 +15,10 @@
 
 #endif
 
+#include <cerrno>
 #include <chrono>
+#include <cstring>
+#include <fstream>
 #include <iomanip>
 #include <sstream>
 
@@ -135,6 +138,13 @@ void AnxietyMonitorPlugin::OnAttach() {
     m_isInitialized = true;
 
     wxLogMessage("AnxietyMonitor: Plugin attached successfully.");
+
+    // Helper prompt as requested by user
+    wxMessageBox("Anxiety Monitor Plugin Loaded Successfully!\n\n"
+                 "Look for the new toolbar buttons (Start/Pause/Export).\n"
+                 "Data will be saved to: " +
+                     CSVWriter::GetDefaultOutputDirectory(),
+                 "Anxiety Monitor", wxOK | wxICON_INFORMATION);
   } catch (const std::exception &e) {
     wxLogError("AnxietyMonitor: Failed to initialize - %s", e.what());
   }
@@ -202,7 +212,20 @@ void AnxietyMonitorPlugin::InitializeComponents() {
 
 void AnxietyMonitorPlugin::RegisterEventHandlers() {
   // In real Code::Blocks plugin, we'd register with Manager::Get()
-  // This connects our handlers to Code::Blocks events
+  // This connects our handlers to Code::Blockusing namespace AnxietyMonitor;
+
+// DEBUG: Global logger to verify DLL load
+#include <fstream>
+  struct GlobalDebugLogger {
+    GlobalDebugLogger() {
+      char *temp = std::getenv("TEMP");
+      std::string path = temp ? std::string(temp) + "/anxiety_monitor_debug.txt"
+                              : "C:/anxiety_monitor_debug.txt";
+      std::ofstream log(path, std::ios::app);
+      log << "DLL Loaded: Global Constructor called.\n";
+    }
+  };
+  static GlobalDebugLogger g_debugLogger;
 
 #ifdef CODEBLOCKS_SDK_INCLUDED
   Manager *mgr = Manager::Get();
@@ -348,11 +371,19 @@ void AnxietyMonitorPlugin::StartSession() {
   // Start CSV file
   if (!m_csvWriter->StartSession(m_currentSessionId)) {
     wxLogError("AnxietyMonitor: Failed to create session file.");
+    wxMessageBox("Failed to create CSV file!\n\nCheck path: " +
+                     m_csvWriter->GetDefaultOutputDirectory(),
+                 "Error", wxOK | wxICON_ERROR);
     return;
   }
 
   // Start data collection
   m_dataCollector->StartSession();
+
+  // FORCE FLUSH: Write a dummy snapshot or just ensure header is on disk
+  m_csvWriter->Flush();
+
+  // Start update timer (30 seconds)
 
   // Start update timer (30 seconds)
   m_updateTimer.Start(UPDATE_INTERVAL_MS);
@@ -366,6 +397,11 @@ void AnxietyMonitorPlugin::StartSession() {
                m_currentSessionId.c_str());
   wxLogMessage("AnxietyMonitor: CSV file: %s",
                m_csvWriter->GetCurrentFilePath().c_str());
+
+  // Visual Feedback
+  wxMessageBox("Monitoring Started!\n\nMetrics will be saved to:\n" +
+                   m_csvWriter->GetCurrentFilePath(),
+               "Anxiety Monitor", wxOK | wxICON_INFORMATION);
 }
 
 void AnxietyMonitorPlugin::PauseSession() {
@@ -378,12 +414,17 @@ void AnxietyMonitorPlugin::PauseSession() {
     // Keep timer running for UI updates, but data collection is paused
 
     wxLogMessage("AnxietyMonitor: Session paused.");
+    wxMessageBox("Monitoring Paused.", "Anxiety Monitor",
+                 wxOK | wxICON_INFORMATION);
+
   } else if (m_sessionState == SessionState::PAUSED) {
     // Resume
     m_dataCollector->ResumeSession();
     m_sessionState = SessionState::RUNNING;
 
     wxLogMessage("AnxietyMonitor: Session resumed.");
+    wxMessageBox("Monitoring Resumed.", "Anxiety Monitor",
+                 wxOK | wxICON_INFORMATION);
   }
 
   UpdateUI();
@@ -416,8 +457,12 @@ void AnxietyMonitorPlugin::EndSession() {
   wxLogMessage("AnxietyMonitor: Session ended. Total rows: %d",
                m_csvWriter->GetRowsWritten());
 
-  // Show completion message (non-intrusive - just a status update)
-  // Don't show popup unless specifically requested
+  // Show completion message
+  wxMessageBox(wxString::Format("Monitoring Stopped.\n\nSession saved.\nTotal "
+                                "rows written: %d\nFile: %s",
+                                m_csvWriter->GetRowsWritten(),
+                                m_csvWriter->GetCurrentFilePath().c_str()),
+               "Anxiety Monitor", wxOK | wxICON_INFORMATION);
 }
 
 void AnxietyMonitorPlugin::ExportSession() {
@@ -516,8 +561,9 @@ void AnxietyMonitorPlugin::AutoSaveMetrics() {
     RiskLevel level = m_scorer->GetRiskLevel(snapshot.anxietyScore);
     snapshot.riskLevel = GetRiskLevelLabel(level);
 
-    // Check if we should show a warning (respects cooldown, only HIGH/CRITICAL)
-    // But since user wants non-intrusive, this is disabled by default
+    // Check if we should show a warning (respects cooldown, only
+    // HIGH/CRITICAL) But since user wants non-intrusive, this is disabled by
+    // default
     if (m_settings.showPopupWarnings && m_scorer->ShouldShowWarning(level)) {
       std::string recommendation = m_scorer->GetRecommendation(level);
       ShowAnxietyNotification(nullptr, level, recommendation);
@@ -551,7 +597,8 @@ void AnxietyMonitorPlugin::ForceSave() {
 
 void AnxietyMonitorPlugin::UpdateStatusBar() {
   // Update status bar with current metrics
-  // In real CB plugin, we'd use Manager::Get()->GetAppFrame()->SetStatusText()
+  // In real CB plugin, we'd use
+  // Manager::Get()->GetAppFrame()->SetStatusText()
 
   if (!m_dataCollector || !m_statusBarManager) {
     return;
