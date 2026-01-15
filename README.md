@@ -33,42 +33,29 @@ A research-backed behavioral analysis plugin for Code::Blocks IDE that monitors 
 
 ## Installation
 
-### Requirements
-- Code::Blocks 20.03 or later
-- wxWidgets 3.0+
-- CMake 3.16+
-- C++17 compatible compiler
+### Installation (Easiest Way)
 
-### Building from Source
+1. **Download** the `AnxietyMonitor.cbplugin` file.
+2. Open **Code::Blocks**.
+3. Go to `Plugins` -> `Manage plugins...`
+4. Click `Install new`.
+5. Select `AnxietyMonitor.cbplugin`.
+6. Follow the prompts and **Restart Code::Blocks**.
 
-```bash
-# Clone or download the plugin
-cd AnxietyMonitor
+### Manual Installation (If above fails)
 
-# Create build directory
-cmake -B build -DCODEBLOCKS_SDK_PATH="C:/Program Files/CodeBlocks"
+1. Rename `AnxietyMonitor.cbplugin` to `AnxietyMonitor.zip`.
+2. Extract it to get `AnxietyMonitor.dll` and `AnxietyMonitor.zip` (inner zip).
+3. Copy **BOTH** files to your Code::Blocks plugins folder:
+   - `C:\Program Files\CodeBlocks\share\CodeBlocks\plugins\`
+4. Restart Code::Blocks.
 
-# Build
-cmake --build build --config Release
+### Troubleshooting
 
-# The plugin will be in build/AnxietyMonitor.dll (Windows) or .so (Linux)
-```
+**Plugin not loading?**
+- **Missing DLLs**: Ensure standard MinGW runtime DLLs (`libstdc++-6.dll`, `libgcc_s_seh-1.dll`, `libwinpthread-1.dll`) are in your Code::Blocks directory or system PATH.
+- **Architecture**: This plugin is 64-bit. Ensure you are using 64-bit Code::Blocks (check `Help -> About`).
 
-### Installing the Plugin
-
-**Windows:**
-```
-Copy AnxietyMonitor.dll to:
-C:\Program Files\CodeBlocks\share\codeblocks\plugins\
-```
-
-**Linux:**
-```
-Copy libAnxietyMonitor.so to:
-/usr/share/codeblocks/plugins/
-```
-
-Then restart Code::Blocks.
 
 ## Usage
 
